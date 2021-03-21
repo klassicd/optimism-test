@@ -6,26 +6,30 @@
   "scripts": {
     "clean": "rimraf ./cache && rimraf ./artifacts",
     "compile": "npm run clean && hardhat compile",
-    "test": "npm run clean && hardhat test"
+    "test": "npm run clean && hardhat test",
+    "evmDeploy": "yarn hardhat --network ethereum_local_L1 deploy --tags",
+    "ovmDeploy": "yarn hardhat --network optimism_local_L2 deploy --tags"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@eth-optimism/dev": "^1.1.1",
+    "@eth-optimism/plugins": "0.0.20",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@types/chai": "^4.2.15",
     "@types/mocha": "^8.2.2",
     "chai": "^4.3.4",
+    "dotenv": "^8.2.0",
     "ethereum-waffle": "^3.3.0",
     "ethers": "^5.0.32",
     "hardhat": "^2.1.1",
+    "hardhat-deploy": "^0.7.0-beta.48",
+    "hardhat-gas-reporter": "^1.0.4",
     "mocha": "^8.3.2",
     "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
   },
-  "dependencies": {
-    "@eth-optimism/plugins": "0.0.20"
-  }
+  "dependencies": {}
 }
