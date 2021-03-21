@@ -21,18 +21,18 @@ const config: HardhatUserConfig = {
   // networks: {
   //   // NOTE: Network names can be named anything
   //   ethereum_local_L1: {
-  //     url: 'http://127.0.0.1:9545', // EVM L1 Chain
+  //     url: 'http://127.0.0.1:8545', // EVM L1 Chain
   //     accounts: {
   //       mnemonic: 'test test test test test test test test test test test junk'
   //     },
-  //     tags: ['local', 'L1']
+  //     // tags: ['local', 'L1']
   //   },
   //   optimism_local_L2: {
-  //     url: 'http://127.0.0.1:8545', // OVM L2 Chain
+  //     url: 'http://127.0.0.1:9545', // OVM L2 Chain
   //     accounts: {
   //       mnemonic: 'test test test test test test test test test test test junk'
   //     },
-  //     tags: ['local', 'L2']
+  //     // tags: ['local', 'L2']
   //   }
   // },
   mocha: {
